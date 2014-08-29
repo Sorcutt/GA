@@ -4,6 +4,7 @@ body, div {
 }
 body {
 	background-color: #eee;
+	background-image: url("http://i.imgur.com/6z3yP5a.png");
 	font-family: Arial, sans-serif;
 }
 img {
@@ -76,6 +77,10 @@ ul.thumbs-down {
 	text-decoration: none;
 	font-weight: 800;
 	color: #3299FF;
+}
+.highlighter {
+	background-color: #FFF883;
+	padding: .3em .8em;
 }
 
 /* Clearfix */
