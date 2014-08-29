@@ -5,13 +5,14 @@ body, div {
 body {
 	font-family: Arial, sans-serif;
 	background-image: url("http://i.imgur.com/4dRhBH6.png");
+	/*background-image: url('img/pattern2.png');*/
 	background-color: #eee;
 }
 img {
 	max-width: 100%;
 }
 .container {
-	width: 800px;
+	width: 65%;
 	margin: 0 auto;
 	background-color: #fff;
 	margin-top: -25px;
@@ -90,3 +91,14 @@ ul.thumbs-down {
   display: table;
   clear: both;
 }
+
+@media (max-width: 965px) {
+	.header .header-img {float: none; width: 100%; padding-bottom: 15px;}
+	.header .header-info {float: none; width: 100%;}
+	.social {margin-top: 35px;}
+	.container .header h2 {text-align: center;}
+}
+
+
+
+
