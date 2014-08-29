@@ -73,6 +73,7 @@ ul.thumbs-down {
 	clear: both;
 	text-align: center;
 	font-size: 1.15em;
+	margin-top: 25px;
 }
 .social a {
 	text-decoration: none;
@@ -97,6 +98,13 @@ ul.thumbs-down {
 	.header .header-info {float: none; width: 100%;}
 	.social {margin-top: 35px;}
 	.container .header h2 {text-align: center;}
+}
+
+@media (max-width: 765px) {
+	.main .list-left {float: none; width: 100%;}
+	.main .list-right {float: none; width: 100%;}
+	.main h3 {text-align: center;}
+	.main ul {margin-left: -15px;}
 }
 
 
