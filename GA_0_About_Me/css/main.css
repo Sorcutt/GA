@@ -3,9 +3,9 @@ body, div {
 	padding: 0;
 }
 body {
-	background-color: #eee;
-	background-image: url("http://i.imgur.com/6z3yP5a.png");
 	font-family: Arial, sans-serif;
+	background-image: url("http://i.imgur.com/4dRhBH6.png");
+	background-color: #eee;
 }
 img {
 	max-width: 100%;
