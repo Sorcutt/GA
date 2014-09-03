@@ -1,0 +1,21 @@
+body {
+	margin: 30px;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+}
+
+.nav ul li {
+	display: inline;
+}
+
+.footer ul li {
+	display: inline;
+}
+
+.post:first-letter {
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+}

@@ -4,8 +4,7 @@ body, div {
 }
 body {
 	font-family: Arial, sans-serif;
-	background-image: url("http://i.imgur.com/4dRhBH6.png");
-	/*background-image: url('img/pattern2.png');*/
+	background-image: url('../img/pattern2.png');
 	background-color: #eee;
 }
 img {
