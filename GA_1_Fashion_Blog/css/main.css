@@ -1,19 +1,53 @@
-body {
-	margin: 30px;
+body, h1, h2, h3, p, img, div, ul {
 	font-family: 'Lato', sans-serif;
 	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+}
+
+.container {
+	width: 75%;
+	margin: 2.4em auto 0;
+}
+
+.header h1 {
+	font-size: 2.6em;
+	color: #D84432;
+}
+
+.header h3 {
+	font-size: 1.3em;
+}
+
+.l-grey {
+	color: #D6D6D6;
+}
+
+.nav {
+	font-size: 1.1em;
+	margin-top: .6em;
 }
 
 .nav ul li {
 	display: inline;
 }
 
+.post .date {
+	font-size: 1.7em;
+	margin-top: 1.4em;
+}
+
+.post h2 {
+	font-size: 1.6em;
+}
+
 .footer ul li {
 	display: inline;
 }
 
-.post:first-letter {
-	color: #333;
+.post p:first-letter {
+	color: #D6D6D6;
 }
 
 img {
