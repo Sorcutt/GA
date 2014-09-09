@@ -7,7 +7,7 @@ body, h1, h2, h3, p, img, div, ul {
 }
 
 .container {
-	width: 75%;
+	max-width: 800px;
 	margin: 2.4em auto 0;
 }
 
@@ -24,13 +24,27 @@ body, h1, h2, h3, p, img, div, ul {
 	color: #D6D6D6;
 }
 
-.nav {
+.header .nav {
 	font-size: 1.1em;
 	margin-top: .6em;
 }
 
-.nav ul li {
+.header .nav a {
+	text-decoration: none;
+	color: #D6D6D6;
+}
+
+.header .nav ul li {
 	display: inline;
+	border-bottom: 2px solid #D6D6D6;
+	margin-right: 10px;
+	padding-bottom: 2px;
+	list-style-type: none;
+}
+
+.post {
+	padding-bottom: 55px;
+	border-bottom: 2px solid #D6D6D6;
 }
 
 .post .date {
@@ -40,16 +54,48 @@ body, h1, h2, h3, p, img, div, ul {
 
 .post h2 {
 	font-size: 1.6em;
-}
-
-.footer ul li {
-	display: inline;
+	margin-bottom: .4em;
 }
 
 .post p:first-letter {
 	color: #D6D6D6;
+	font-size: 5.2em;
+	float: left;
+	margin: -23px 9px -20px -6px;
+}
+
+.post p {
+	margin-top: .5em;
+}
+
+.post .more {
+	color: #D84432;
+	float: right;
+	font-weight: 800;
+	margin-top: .5em;
+}
+
+.footer {
+	clear: both;
+	padding: 45px 0;
+}
+
+.footer p {
+	font-weight: 800;
+}
+
+.footer a {
+	color: #D84432;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.footer .copyright {
+	font-size: .85em;
+	margin-top: 1em;
 }
 
 img {
 	max-width: 100%;
 }
+
