@@ -39,20 +39,6 @@ body {
 	width: 100px;
 }
 
-#red-light {
-	background-color: red;
-	margin-bottom: 20px;
-}
-
-#yellow-light {
-	background-color: yellow;
-	margin-bottom: 20px;
-}
-
-#green-light {
-	background-color: #00ce00;
-}
-
 .button-cont {
 	display: inline-block;
 	float: right;
@@ -86,3 +72,16 @@ body {
 	margin-bottom: 80px;
 }
 
+#red-light {
+	background-color: red;
+	margin-bottom: 20px;
+}
+
+#yellow-light {
+	background-color: yellow;
+	margin-bottom: 20px;
+}
+
+#green-light {
+	background-color: #00ce00;
+}
