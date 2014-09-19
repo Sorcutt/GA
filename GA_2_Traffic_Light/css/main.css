@@ -17,18 +17,19 @@ body {
 	height: 100vh;
 }
 
-.traf-light-wrapper {
-	width: 215px;
+#traf-light {
+	width: 165px;
 	margin: 0 auto;
 	padding: 25px 0;
 	position: relative;
 }
 
-.light-cont {
+#light-cont {
 	background-color: #000;
 	display: inline-block;
 	padding: 25px;
 	border-radius: 10px;
+	margin-right: 20px;
 }
 
 .shadow {
@@ -49,31 +50,43 @@ body {
 }
 
 .button {
-	font-size: 1.5em;
+	font-size: 1em;
+	color: #fff;
 	letter-spacing: 1.2px;
 	font-family: Futura, sans-serif;
 	background-color: #000;
-	padding: 10px 16px;
+	padding: 10px 0;
+	width: 150px;
 	position: absolute;
 	border-radius: 10px;
+	cursor: pointer;
 }
 
 .button#stop {
-	color: red;
 	top: 0;
 	margin-top: 80px;
 }
 
+.button#stop:hover {
+	color: red;
+}
+
 .button#caution {
-	color: yellow;
 	top: 50%;
 	margin-top: -20px;
 }
 
+.button#caution:hover {
+	color: yellow;
+}
+
 .button#go {
-	color: #00ce00;
 	bottom: 0;
 	margin-bottom: 80px;
+}
+
+.button#go:hover {
+	color: green;
 }
 
 #red-light {
