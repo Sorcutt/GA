@@ -17,7 +17,7 @@ body {
 	height: 100vh;
 }
 
-#traf-light {
+#wrapper {
 	width: 165px;
 	margin: 0 auto;
 	padding: 25px 0;
@@ -25,9 +25,9 @@ body {
 }
 
 #light-cont {
-	background-color: #000;
+	background-color: #131313;
 	display: inline-block;
-	padding: 25px;
+	padding: 25px 25px 8px;
 	border-radius: 10px;
 	margin-right: 20px;
 }
@@ -42,6 +42,9 @@ body {
 	border-radius: 50%;
 	height: 100px;
 	width: 100px;
+	background-color: #252525;
+	border: 1px solid #000;
+	margin-bottom: 20px;
 }
 
 .button-cont {
@@ -53,7 +56,7 @@ body {
 	font-size: 1em;
 	color: #fff;
 	letter-spacing: 1.2px;
-	font-family: Futura, sans-serif;
+	font-family: Arial, sans-serif;
 	background-color: #000;
 	padding: 10px 0;
 	width: 150px;
@@ -89,16 +92,4 @@ body {
 	color: green;
 }
 
-#red-light {
-	background-color: red;
-	margin-bottom: 20px;
-}
 
-#yellow-light {
-	background-color: yellow;
-	margin-bottom: 20px;
-}
-
-#green-light {
-	background-color: #00ce00;
-}

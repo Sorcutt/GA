@@ -8,18 +8,18 @@
 </head>
 <body>
 	<div class="background">
-		<div id="traf-light">
+		<div id="wrapper">
 			<div id="light-cont">
-				<div class="traf-light shadow" id="red-light"></div>
-				<div class="traf-light shadow" id="yellow-light"></div>
-				<div class="traf-light shadow" id="green-light"></div>
+				<div id="red-light" class="traf-light shadow"></div>
+				<div id="yellow-light" class="traf-light shadow"></div>
+				<div id="green-light" class="traf-light shadow"></div>
 			</div>
 			<div class="button-cont">
-				<div class="button" id="stop" onclick="buttonClick()">STOP</div>
-				<div class="button" id="caution" onclick="buttonClick()">CAUTION</div>
-				<div class="button" id="go" onclick="buttonClick()">GO</div>
+				<div class="button" id="stop" onclick="buttonClick('red-light')">STOP</div>
+				<div class="button" id="caution" onclick="buttonClick('yellow-light')">CAUTION</div>
+				<div class="button" id="go" onclick="buttonClick('green-light')">GO</div>
 			</div>
-		</div>
-	</div>
+		</div><!-- wrapper end -->
+	</div><!-- background end -->
 </body>
 </html>
