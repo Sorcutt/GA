@@ -45,6 +45,9 @@ body {
 	background-color: #252525;
 	border: 1px solid #000;
 	margin-bottom: 20px;
+	transition: background-color 0.25s ease-in;
+   -moz-transition: background-color 0.25s ease-in;
+   -webkit-transition: background-color 0.25s ease-in;
 }
 
 .button-cont {
