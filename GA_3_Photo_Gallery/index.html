@@ -3,10 +3,58 @@
 <head>
 	<meta charset="utf-8">
 	<title>Photo Gallery</title>
-	<script type="text/javascript" src="js/application.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
+<div class="thumb-wrapper">
+	<div class="row">
+		<div class="thumb" id="snake" onclick="changeImage(0)">
+			<img src="img/0_thumb.jpg">
+		</div>
+		<div class="thumb" id="jungle" onclick="changeImage(1)">
+			<img src="img/1_thumb.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="thumb" id="squirrel" onclick="changeImage(2)">
+			<img src="img/2_thumb.jpg">
+		</div>
+		<div class="thumb" id="vader" onclick="changeImage(3)">
+			<img src="img/3_thumb.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="thumb" id="gulls" onclick="changeImage(4)">
+			<img src="img/4_thumb.jpg">
+		</div>
+		<div class="thumb" id="fall" onclick="changeImage(5)">
+			<img src="img/5_thumb.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="thumb" id="empire" onclick="changeImage(6)">
+			<img src="img/6_thumb.jpg">
+		</div>
+		<div class="thumb" id="bridge" onclick="changeImage(7)">
+			<img src="img/7_thumb.jpg">
+		</div>
+	</div>
+</div>
+
+<div class="main-wrapper">
+	<img id="main-image" src="img/0_thumb.jpg">
+	<div class="controls">
+		<img id="prevButton" onclick="prevImage(currentImage)" src="img/prev-icon.png">
+		<img id="nextButton" onclick="nextImage(currentImage)" src="img/next-icon.png">
+	</div>
+	<div class="about">
+		<h4>About the artist</h4>
+		<p>Sofia Bravo is a photographer living in Cancun, Mexico. She is a Communication Student in pursuit of Film Studies.</p>
+		<p><span class="bold">contact:</span> <a href="mailto:gaialbsofia@gmail.com" target="_top">gaialbsofia@gmail.com</a></p>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/application.js"></script>
 </body>
 </html>
