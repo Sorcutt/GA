@@ -1,0 +1,87 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, .row {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+	background-image: url("../img/stardust.png");
+	color: #DBFF00;
+	font-family: Impact, sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.game-title {
+	width: 100%;
+	background-color: #000;
+}
+
+.game-title h1 {
+	text-align: center;
+	font-weight: 200;
+	font-size: 3em;
+	padding: 25px 0;
+	text-transform: uppercase;
+}
+
+.button {
+	background-color: #ff8100;
+	border-radius: 10px;
+	color: #474747;
+	display: inline-block;
+	font-family: Arial;
+	font-weight: 100;
+	font-size: .9em;
+	padding: 5px 10px;
+	margin-left: 10px;
+}
+
+.button:hover {
+	cursor: pointer;
+	color: #000;
+	background-color: #ff9a00;
+}
+
+.user-choice-container {
+	margin-top: 20px;
+}
+
+h2 {
+	font-size: 2.3em;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+}
+
+.result {
+	margin-top: 25px;
+}
+
+.output-field {
+	width: 35%;
+	margin: 0 auto;
+	height: 200px;
+	background-color: #272727;
+}
+
+
+
+
+
+
+
