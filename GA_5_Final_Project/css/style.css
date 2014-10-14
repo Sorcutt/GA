@@ -1,0 +1,72 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+ .header {
+ 	background-color: #000;
+ 	position: fixed;
+ 	width: 100%;
+ 	color: #fff;
+ 	text-transform: uppercase;
+ 	height: 85px;
+ 	z-index: 800!important;
+ 	font-family: 'Amatic SC', cursive;
+ }
+
+ .header-inner {
+ 	padding-top: 35px;
+ }{
+
+
+ .header-inner:after  	content: "";
+	display: table;
+	clear: both;
+ }
+
+ .header .header-inner h1 {
+ 	float: left;
+ 	padding-left: 35px;
+ 	font-size: 2em;
+ }
+
+ .header  .header-inner ul {
+ 	list-style-type: none;
+ 	float: right;
+ 	padding: 8px 35px 0 0;
+ }
+
+  .header  .header-inner ul li {
+  	display: inline-block;
+  	padding-left: 15px;
+  	font-size: 1.5em;
+  }
+
+  .main {
+  	position: relative;
+  	padding-top: 85px;
+  }
+
+  .grid .img-frame {
+  	background-color: #e3e8ea;
+  	border: 1px solid #a0a0a0;
+  	height: 250px;
+  	width: 185px;
+  	display: inline;
+  }
