@@ -6,7 +6,7 @@ function changeImage(whichNum) {
 	img.setAttribute('src', images[whichNum]);
 	currentImage = whichNum;
 }
-
+//line by line console.log
 function nextImage(whichNum) {
 	currentImage++;
 	if(currentImage===images.length){

@@ -41,9 +41,9 @@ body {
 }
 
 .button {
-	background-color: #ff8100;
+	background-color: #ff404a;
 	border-radius: 10px;
-	color: #474747;
+	color: #353535;
 	display: inline-block;
 	font-family: Arial;
 	font-weight: 100;
@@ -55,7 +55,7 @@ body {
 .button:hover {
 	cursor: pointer;
 	color: #000;
-	background-color: #ff9a00;
+	background-color: #ff515a;
 }
 
 .user-choice-container {
@@ -66,6 +66,7 @@ h2 {
 	font-size: 2.3em;
 	margin-bottom: 10px;
 	letter-spacing: 2px;
+	font-family: 'Amatic SC', cursive;
 }
 
 .result {
@@ -77,6 +78,12 @@ h2 {
 	margin: 0 auto;
 	height: 200px;
 	background-color: #272727;
+}
+
+#output {
+	font-size: 2.5em;
+	line-height: 195px;
+	letter-spacing: 2px;
 }
 
 

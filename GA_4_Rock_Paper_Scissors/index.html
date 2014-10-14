@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Rock-Paper-Scissors</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Coming+Soon|Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -13,15 +14,19 @@
 
 	<div class="user-choice-container">
 		<h2>pick your poison</h2>
-		<input id="userChoice" type="text">
-		<div class="button" onClick="choiceSubmit()"><h3>submit</h3></div>
+		<div class="button" onClick="choiceClick("rock")"><h3>rock</h3></div>
+		<div class="button" onClick="choiceClick("paper")"><h3>paper</h3></div>
+		<div class="button" onClick="choiceClick("scissors")"><h3>scissors</h3></div>
 	</div>
 
 	<div class="result">
 		<h2>you are a:</h2>
-		<div class="output-field"></div>
+		<div class="output-field">
+			<h3 id="outputText"></h3>
+		</div>
 	</div>
 
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

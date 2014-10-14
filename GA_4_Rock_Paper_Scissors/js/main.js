@@ -1,15 +1,12 @@
-
-
-var userChoice = "paper";
-var computerChoice = "rock";
-
-//combined string outcomes:
 var userWins = ["rockscissors", "paperrock", "scissorspaper"];
-
-//generate computer choice:
 var choices = ["rock", "paper", "scissors"];
+var num = Math.floor(Math.random()*choices.length);
+var computerChoice = choices(num);
 
-computerChoice = choices[Math.random()*choices.length];
+function choiceClick(choice){
+	var outComeMsg = evaluate(choice);
+	displayOutcome(outComeMsg);	
+}
 
 function evaluate() {
 	var msg = "Computer Wins!";
@@ -30,3 +27,7 @@ function evaluate() {
 
 var outComeMsg = evaluate();
 alert(outComeMsg);
+
+function displayOutcome(outComeMsg) {
+	#('#outComeText').text(outComeMsg);
+}
