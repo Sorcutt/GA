@@ -1,5 +1,3 @@
-
-
 var userChoice = "paper";
 var computerChoice = "rock";
 
@@ -14,7 +12,7 @@ computerChoice = choices[Math.random()*choices.length];
 function evaluate() {
 	var msg = "Computer Wins!";
 
-	if(userChoice==computerChoice) {
+	if (userChoice==computerChoice) {
 		msg = "Tie!";
 	} else {
 

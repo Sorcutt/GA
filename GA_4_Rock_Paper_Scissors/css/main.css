@@ -17,7 +17,8 @@ time, mark, audio, video, .row {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline; 
+}
 
 body {
 	background-image: url("../img/stardust.png");
@@ -25,6 +26,12 @@ body {
 	font-family: Impact, sans-serif;
 	letter-spacing: 1px;
 	text-align: center;
+}
+
+h2 {
+	font-size: 2.3em;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
 }
 
 .game-title {
@@ -60,12 +67,6 @@ body {
 
 .user-choice-container {
 	margin-top: 20px;
-}
-
-h2 {
-	font-size: 2.3em;
-	margin-bottom: 10px;
-	letter-spacing: 2px;
 }
 
 .result {
