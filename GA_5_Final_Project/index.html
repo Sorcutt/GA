@@ -16,20 +16,57 @@
 				<li>Design</li>
 				<li>Illustration</li>
 				<li>Sketchbook</li>
-				<li>About</li>
+				<li><a href="#about">About</a></li>
 				<li>Contact</li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="main">
-		<div class="grid">
-			<div class="img-frame"></div>
-			<div class="img-frame"></div>
-			<div class="img-frame"></div>
-			<div class="img-frame"></div>
+		<div id="container">
+			<div class="item height2">
+				<img src="img/collin.jpg">
+			</div>
+			<div class="item">
+				<img src="img/currents.jpg">
+			</div>
+			<div class="item width2">
+				<img src="img/sloppy_still_life.jpg">
+			</div>
+			<div class="item">
+				<img src="img/laura_palmer.gif">
+			</div>
+			<div class="item">
+				<img src="img/huntress.jpg">
+			</div>
+			<div class="item">
+				<img src="img/iphone_man.jpg">
+			</div>
+			<div class="item">
+				<img src="img/dot_rats.jpg">
+			</div>
+			<div class="item">
+				<img src="img/sketch_laura.jpg">
+			</div>
+			<div class="item">
+				<img src="img/self_portrait.jpg">
+			</div>
 		</div>
 	</div>
 
+	<div id="about"></div>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript">
+	var $container = $('#container');
+	// init
+	$container.isotope({
+	  // options
+	  itemSelector: '.item',
+	  layoutMode: 'masonry'
+	});
+</script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

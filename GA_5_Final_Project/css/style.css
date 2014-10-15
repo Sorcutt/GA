@@ -32,10 +32,10 @@ time, mark, audio, video {
 
  .header-inner {
  	padding-top: 35px;
- }{
+ }
 
-
- .header-inner:after  	content: "";
+ .header-inner:after { 	
+  content: "";
 	display: table;
 	clear: both;
  }
@@ -58,15 +58,38 @@ time, mark, audio, video {
   	font-size: 1.5em;
   }
 
+  .header  .header-inner a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .header  .header-inner li a:hover {
+    color: yellow;
+  }
+
   .main {
   	position: relative;
   	padding-top: 85px;
   }
 
-  .grid .img-frame {
-  	background-color: #e3e8ea;
-  	border: 1px solid #a0a0a0;
-  	height: 250px;
-  	width: 185px;
-  	display: inline;
+  #container img {
+    width: 100%;
   }
+
+  #container:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .item {
+    float: left;
+    width: 33.33%;
+    height: auto;
+  }
+
+  /*.item.width2 { width: 600px; }
+  .item.height2 { height: 600px; }*/
+
+
+
