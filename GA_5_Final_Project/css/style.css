@@ -19,6 +19,10 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
+  body {
+    background-color: #c2fde5;
+  }
+
  .header {
  	background-color: #000;
  	position: fixed;
@@ -88,8 +92,6 @@ time, mark, audio, video {
     height: auto;
   }
 
-  /*.item.width2 { width: 600px; }
-  .item.height2 { height: 600px; }*/
 
 
 
