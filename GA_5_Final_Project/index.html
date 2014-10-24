@@ -9,55 +9,105 @@
 </head>
 <body>
 
-	<div class="header">
-		<div class="header-inner">
-			<h1>Shannon Orcutt</h1>
-			<ul>
-				<li>Design</li>
-				<li>Illustration</li>
-				<li>Sketchbook</li>
-				<li><a href="#about">About</a></li>
-				<li>Contact</li>
-			</ul>
-		</div>
-	</div>
+<!-- SMOOTH SCROLL -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
 
-	<div class="main">
-		<div id="container">
-			<div class="item illustration">
-				<img src="img/collin.jpg">
-			</div>
-			<div class="item illustration ink">
-				<img src="img/currents.jpg">
-			</div>
-			<div class="item illustration acrylic">
-				<img src="img/sloppy_still_life.jpg">
-			</div>
-			<div class="item illustration digital">
-				<img src="img/laura_palmer.gif">
-			</div>
-			<div class="item illustration">
-				<img src="img/huntress.jpg">
-			</div>
-			<div class="item illustration">
-				<img src="img/iphone_man.jpg">
-			</div>
-			<div class="item illustration">
-				<img src="img/dot_rats.jpg">
-			</div>
-			<div class="item illustration sketchbook">
-				<img src="img/sketch_laura.jpg">
-			</div>
-			<div class="item illustration digital">
-				<img src="img/self_portrait.jpg">
-			</div>
-			<div class="item design">
-				<img src="img/timeline.jpg">
+	<div class="body-wrapper">
+
+		<div class="header">
+			<div class="header-inner"  id="filters">
+				<button class="button" id="title" data-filter="*">Shannon Orcutt</button>
+				<div class="button-wrap">
+					<button class="button" data-filter=".design">Design</button>
+					<button class="button" data-filter=".illustration">Illustration</button>
+					<button class="button" data-filter=".sketchbook">Sketchbook</button>
+					<a href="#about">About</a>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div id="about"></div>
+		<div class="main">
+			<div id="container">
+				<div class="item illustration ink">
+					<img src="img/currents.jpg">
+				</div>
+				<div class="item illustration">
+					<img src="img/huntress.jpg">
+				</div>
+				<div class="item illustration digital">
+					<img src="img/laura_palmer.gif">
+				</div>
+				<div class="item illustration acrylic">
+					<img src="img/sloppy_still_life.jpg">
+				</div>
+				<div class="item design">
+					<img src="img/pick-phone-quiz.jpg">
+				</div>
+				<div class="item illustration">
+					<img src="img/collin.jpg">
+				</div>
+				<div class="item design">
+					<img src="img/tech-expert.jpg">
+				</div>
+				<div class="item sketchbook">
+					<img src="img/rando-sketches.jpg">
+				</div>
+				<div class="item illustration">
+					<img src="img/iphone_man.jpg">
+				</div>
+				<div class="item sketchbook">
+					<img src="img/sketch_laura.jpg">
+				</div>
+				<div class="item illustration digital">
+					<img src="img/self_portrait.jpg">
+				</div>
+				<div class="item design">
+					<img src="img/timeline.jpg">
+				</div>
+				<div class="item design">
+					<img src="img/foam-roll-infographic.jpg">
+				</div>
+				<div class="item illustration">
+					<img src="img/dot_rats.jpg">
+				</div>
+				<div class="item design">
+					<img src="img/guess-the-date.jpg">
+				</div>
+				<div class="item design">
+					<img src="img/thehorn-email-blast.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div id="about">
+			<img src="img/bio_pic.jpg">
+			<p>Banh mi pickled Odd Future whatever. Before they sold out chambray Marfa, church-key irony meh Etsy hella fashion axe stumptown. Ennui High Life tote bag selfies readymade. Locavore cornhole gluten-free sustainable trust fund crucifix. Heirloom YOLO polaroid Portland, High Life you probably haven't heard of them next level Marfa jean shorts forage. Meggings brunch freegan Pinterest, authentic Cosby sweater Pitchfork heirloom. McSweeney's Pinterest 90's, Kickstarter Neutra flannel gluten-free Godard fingerstache asymmetrical freegan blog.</p>
+
+			<p>Seitan fingerstache tilde, literally mustache master cleanse wolf cred. Mixtape post-ironic swag Schlitz retro, jean shorts meditation lo-fi Odd Future. Neutra distillery literally pork belly cornhole, Etsy next level lo-fi American Apparel. Freegan 8-bit pork belly, cold-pressed literally Portland beard Tumblr Pitchfork butcher plaid authentic. Asymmetrical cornhole hashtag Austin 3 wolf moon Brooklyn. Sriracha lomo four loko cliche, Banksy mlkshk disrupt authentic Truffaut locavore. Cosby sweater twee XOXO, Etsy selfies Tumblr jean shorts McSweeney's kale chips VHS flexitarian fixie polaroid Kickstarter gluten-free.</p>
+		</div>
+
+		<div class="footer">
+			<p>© 2014 by Shannon Orcutt all rights reserved.</p>
+		</div>
+
+	</div><!--body wrapper end-->
 
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
@@ -68,6 +118,11 @@
 	  // options
 	  itemSelector: '.item',
 	  layoutMode: 'masonry'
+	});
+
+	$('#filters').on( 'click', 'button', function() {
+	  var filterValue = $(this).attr('data-filter');
+	  $container.isotope({ filter: filterValue });
 	});
 </script>
 <script type="text/javascript" src="js/main.js"></script>
